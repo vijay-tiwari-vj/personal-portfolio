@@ -1,23 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import React from 'react';
+import Container from 'react-bootstrap/Container';
+import CardColumns from 'react-bootstrap/CardColumns';
 
-function App() {
+import Hero from './components/Hero';
+import WorkCard from './components/WorkCard';
+
+export const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <section id="about" className="about-container">
+        <Hero />
+      </section>
+      <section id="work" className="work-container">
+        <Container>
+          <CardColumns>
+            <WorkCard />
+          </CardColumns>
+        </Container>
+      </section>
+      <section id="contact" className="contact-container">
+
+      </section>
     </div>
   );
 }
