@@ -1,61 +1,54 @@
 import React from 'react';
 import Card from 'react-bootstrap/Card';
+import Badge from 'react-bootstrap/Badge';
 
-export const WorkCard = () => {
+export const WorkCard = ({ projects }) => {
   return (
     <>
-      <Card className="p-3">
-        <blockquote className="blockquote mb-0 card-body">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere
-            erat a ante.
-          </p>
-          <footer className="blockquote-footer">
-            <small className="text-muted">
-              Someone famous in <cite title="Source Title">Source Title</cite>
-            </small>
-          </footer>
-        </blockquote>
-      </Card>
-      <Card className="p-3">
-        <blockquote className="blockquote mb-0 card-body">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere
-            erat a ante.
-          </p>
-          <footer className="blockquote-footer">
-            <small className="text-muted">
-              Someone famous in <cite title="Source Title">Source Title</cite>
-            </small>
-          </footer>
-        </blockquote>
-      </Card>
-      <Card className="p-3">
-        <blockquote className="blockquote mb-0 card-body">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere
-            erat a ante.
-          </p>
-          <footer className="blockquote-footer">
-            <small className="text-muted">
-              Someone famous in <cite title="Source Title">Source Title</cite>
-            </small>
-          </footer>
-        </blockquote>
-      </Card>
-      <Card className="p-3">
-        <blockquote className="blockquote mb-0 card-body">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere
-            erat a ante.
-          </p>
-          <footer className="blockquote-footer">
-            <small className="text-muted">
-              Someone famous in <cite title="Source Title">Source Title</cite>
-            </small>
-          </footer>
-        </blockquote>
-      </Card>
+      { projects.map(project => (
+        <Card style={{ width: '32rem' }}>
+          <a href={project.live_url} target="_blank" rel="noreferrer">
+            <Card.Img variant="top" src={project.image} />
+          </a>
+          <Card.Body>
+            <Card.Title>{project.title}</Card.Title>
+            <Card.Text>
+              {project.desc}
+            </Card.Text>
+            <div className="more-info">
+              <span className="github-link">
+                <span>
+                  <Card.Link
+                    href={project.live_url}
+                    target="_blank"
+                    className="link"
+                    rel="noreferrer"
+                  >
+                    Live demo
+                </Card.Link>
+                </span>
+                <span>
+                  <Card.Link
+                    href={project.code_url}
+                    target="_blank"
+                    className="link"
+                    rel="noreferrer"
+                  >
+                    Code
+                </Card.Link>
+                </span>
+              </span>
+              <span className="tech">
+                {project.tech.map(item => (
+                  <span>
+                    <Badge pill variant="primary">{item}</Badge>
+                  </span>
+                ))}
+              </span>
+            </div>
+          </Card.Body>
+        </Card>
+      ))}
     </>
   )
 }
