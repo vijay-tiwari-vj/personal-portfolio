@@ -1,7 +1,7 @@
 import React from 'react';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
-import { Container } from 'react-bootstrap';
+import Container from 'react-bootstrap/Container';
 
 const getNavbar = () => (
   <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
@@ -24,7 +24,7 @@ export const Hero = () => {
       {getNavbar()}
       <Container className="home">
         <div className="about-me">
-          <h1>Hi, I'm Vijay</h1>
+          <h1>Hi, I'm Vijay<i className="far fa-hand-peace"></i></h1>
           <p>a developer</p>
         </div>
       </Container>

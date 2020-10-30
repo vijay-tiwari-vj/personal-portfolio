@@ -4,6 +4,8 @@ import Container from 'react-bootstrap/Container';
 
 import Hero from './components/Hero';
 import WorkCard from './components/WorkCard';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
 
 const projects = [
   {
@@ -59,14 +61,25 @@ export const App = () => {
       </section>
       <section id="work" className="work-container">
         <Container>
-          <div className="cards">
-            <WorkCard projects={projects} />
+          <div className="max-container">
+            <h2>Work</h2>
+            <div className="cards">
+              <WorkCard projects={projects} />
+            </div>
           </div>
         </Container>
       </section>
       <section id="contact" className="contact-container">
-
+        <Container>
+          <div className="max-container">
+            <h2>Let's work together...</h2>
+            <Contact />
+          </div>
+        </Container>
       </section>
+      <div className="footer">
+        <Footer />
+      </div>
     </div>
   );
 }
