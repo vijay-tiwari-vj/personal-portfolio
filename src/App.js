@@ -10,7 +10,7 @@ import Footer from './components/Footer';
 const projects = [
   {
     title: 'Anime Finder',
-    image: 'https://i.imgur.com/wcIOyZk.jpg',
+    image: 'https://i.imgur.com/pB7fWEY.jpg',
     desc: "Search your favorite anime on Anime Finder or find top anime to watch if you're new to anime world!",
     live_url: 'https://vijay-tiwari-vj.github.io/anime-finder',
     code_url: 'https://github.com/vijay-tiwari-vj/anime-finder',

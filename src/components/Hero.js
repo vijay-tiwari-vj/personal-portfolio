@@ -27,6 +27,13 @@ export const Hero = () => {
           <h1>Hi, I'm Vijay<i className="far fa-hand-peace"></i></h1>
           <p>a developer</p>
         </div>
+        <div className="img-container">
+          <img
+            className="image"
+            src="https://i.imgur.com/0pZOI7a.png"
+            alt="Vijay"
+          />
+        </div>
       </Container>
     </>
   )
