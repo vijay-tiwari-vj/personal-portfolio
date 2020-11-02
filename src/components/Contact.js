@@ -19,7 +19,7 @@ export const Contact = () => {
         </Form.Group>
         <div>
           <button className="link btn-contact" type="submit">
-            Send <i className="fa fa-paper-plane send" aria-hidden="true"></i>
+            Send<i className="fa fa-paper-plane" aria-hidden="true"></i>
           </button>
         </div>
       </Form>
