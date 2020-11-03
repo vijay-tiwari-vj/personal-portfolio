@@ -10,7 +10,7 @@ import Footer from './components/Footer';
 const projects = [
   {
     title: 'Anime Finder',
-    image: 'https://i.imgur.com/pB7fWEY.jpg',
+    image: 'https://i.imgur.com/tQXTBxS.jpg',
     desc: "Search your favorite anime on Anime Finder or find top anime to watch if you're new to anime world!",
     live_url: 'https://vijay-tiwari-vj.github.io/anime-finder',
     code_url: 'https://github.com/vijay-tiwari-vj/anime-finder',
@@ -21,7 +21,7 @@ const projects = [
   },
   {
     title: 'HomeBank',
-    image: 'https://i.imgur.com/wcIOyZk.jpg',
+    image: 'https://i.imgur.com/dTsBaVy.png',
     desc: "HomeBank helps you manage your cash by keeping a history of your previous transactions.",
     live_url: 'https://expo.io/@vijay_tiwari_vj/HomeBank',
     code_url: 'https://github.com/vijay-tiwari-vj/HomeBank',
@@ -31,7 +31,7 @@ const projects = [
   },
   {
     title: 'Number in words',
-    image: 'https://i.imgur.com/wcIOyZk.jpg',
+    image: 'https://i.imgur.com/RBcMcBx.jpg',
     desc: "Convert a number or a range of numbers to words.",
     live_url: 'https://vijay-tiwari-vj.github.io/number-in-words',
     code_url: 'https://github.com/vijay-tiwari-vj/number-in-words',
@@ -42,7 +42,7 @@ const projects = [
   },
   {
     title: 'Markdown Previewer',
-    image: 'https://i.imgur.com/wcIOyZk.jpg',
+    image: 'https://i.imgur.com/UpfVX2G.jpg',
     desc: "GitHub like markdown previewer.",
     live_url: 'https://vijay-tiwari-vj.github.io/markdown-previewer',
     code_url: 'https://github.com/vijay-tiwari-vj/markdown-previewer',

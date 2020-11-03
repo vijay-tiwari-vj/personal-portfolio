@@ -6,7 +6,7 @@ export const WorkCard = ({ projects }) => {
   return (
     <>
       { projects.map(project => (
-        <Card key={project.title} style={{ width: '32rem' }}>
+        <Card key={project.title} className="card">
           <a href={project.live_url} target="_blank" rel="noreferrer">
             <Card.Img
               variant="top"
@@ -45,7 +45,7 @@ export const WorkCard = ({ projects }) => {
               <span className="tech">
                 {project.tech.map(item => (
                   <span key={`${project.title}-${item}`}>
-                    <Badge pill variant="primary">{item}</Badge>
+                    <Badge pill className="badge">{item}</Badge>
                   </span>
                 ))}
               </span>

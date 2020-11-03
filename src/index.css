@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
+:root {
+  --primary-color: #6773b8;
+  --secondary-color: rgb(223, 114, 114);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -23,6 +28,23 @@ i {
   padding: 0 10px;
 }
 
+#svg {
+  position: relative;
+  /* background: lightcoral; */
+  height: 350px;
+  width: 350px;
+}
+
+.about-me {
+  position: absolute;
+}
+
+.animation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .social-contacts {
   display: flex;
   flex-direction: column;
@@ -36,7 +58,7 @@ i {
 }
 
 .home-container {
-  height: 100vh;
+  height: 110vh;
   padding-bottom: 2rem;
 }
 
@@ -52,7 +74,7 @@ i {
 }
 
 .home {
-  height: 90%;
+  height: 95%;
   display: flex;
   flex-wrap: wrap;
   /* background: lightcoral; */
@@ -63,7 +85,7 @@ i {
 .img-container {
   width: 300px;
   height: 300px;
-  background: #6773b8;
+  background: var(--primary-color);
   border-radius: 50%;
 }
 
@@ -83,6 +105,18 @@ i {
   gap: 20px;
 }
 
+.card {
+  width: 32rem;
+  border: none !important;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.1),
+              -2px -2px 5px rgba(0,0,0,0.1) !important;
+}
+
+.card:hover {
+  box-shadow: 5px 5px 10px rgba(0,0,0,0.2),
+              -5px -5px 10px rgba(0,0,0,0.2) !important;
+}
+
 .project-img {
   height: 30rem;
   object-fit: cover;
@@ -93,7 +127,7 @@ i {
   align-items: center;
   justify-content: center;
   color: white;
-  background: #333;
+  background: var(--primary-color);
   border-radius: 4px;
   padding: 2px 6px;
 }
@@ -121,6 +155,11 @@ i {
   gap: 5px;
 }
 
+.badge {
+  background: #f5f4f4;
+  color: #333333;
+}
+
 .max-container {
   width: 100%;
   max-width: calc(64rem + 20px);
@@ -138,7 +177,3 @@ i {
   outline: none;
   border: none;
 }
-
-/* .footer {
-  background: lightcoral;
-} */
