@@ -28,15 +28,23 @@ i {
   padding: 0 10px;
 }
 
+form {
+  width: 100%;
+}
+
 #svg {
   position: relative;
-  /* background: lightcoral; */
-  height: 350px;
-  width: 350px;
+  /* background: var(--secondary-color); */
+  height: 340px;
+  width: 340px;
 }
 
 .about-me {
   position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .animation {
@@ -58,11 +66,12 @@ i {
 }
 
 .home-container {
-  height: 110vh;
+  height: 90vh;
+  min-height: 750px;
   padding-bottom: 2rem;
 }
 
-.work-container {
+.projects-container {
   min-height: 100vh;
   padding-bottom: 2rem;
 }
@@ -162,8 +171,9 @@ i {
 
 .max-container {
   width: 100%;
-  max-width: calc(64rem + 20px);
-  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .form-fields {
@@ -176,4 +186,13 @@ i {
   padding: 6px 18px;
   outline: none;
   border: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .card {
+    width: 100%;
+  }
+  .project-img {
+    height: 32rem;
+  }
 }

@@ -59,10 +59,10 @@ export const App = () => {
       <section id="home" className="home-container">
         <Hero />
       </section>
-      <section id="work" className="work-container">
+      <section id="projects" className="projects-container">
         <Container>
           <div className="max-container">
-            <h2>Work</h2>
+            <h2>Projects</h2>
             <div className="cards">
               <WorkCard projects={projects} />
             </div>
