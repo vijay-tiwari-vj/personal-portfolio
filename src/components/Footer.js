@@ -50,10 +50,9 @@ export const Footer = () => {
             padding: '1rem'
           }}
         >
-          &copy; Copyright 2020. All Rights Reserved.
+          &copy; 2020 Vijay Tiwari
         </small>
       </footer>
-
     </Container>
   )
 }
