@@ -7,7 +7,7 @@ export const WorkCard = ({ projects }) => {
     <>
       { projects.map(project => (
         <Card key={project.title} className="card">
-          <a href={project.live_url} target="_blank" rel="noreferrer">
+          <a href={project.live_url} target="_blank" rel="noreferrer" alt={project.title}>
             <Card.Img
               variant="top"
               src={project.image}

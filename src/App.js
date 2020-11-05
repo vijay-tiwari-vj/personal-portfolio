@@ -2,6 +2,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import React from 'react';
 import Container from 'react-bootstrap/Container';
 
+import NavBar from './components/NavBar';
 import Hero from './components/Hero';
 import WorkCard from './components/WorkCard';
 import Contact from './components/Contact';
@@ -10,7 +11,7 @@ import Footer from './components/Footer';
 const projects = [
   {
     title: 'Anime Finder',
-    image: 'https://i.imgur.com/tQXTBxS.jpg',
+    image: 'https://i.imgur.com/6m9DTMg.jpg',
     desc: "Search your favorite anime on Anime Finder or find top anime to watch if you're new to anime world!",
     live_url: 'https://vijay-tiwari-vj.github.io/anime-finder',
     code_url: 'https://github.com/vijay-tiwari-vj/anime-finder',
@@ -21,7 +22,7 @@ const projects = [
   },
   {
     title: 'HomeBank',
-    image: 'https://i.imgur.com/dTsBaVy.png',
+    image: 'https://i.imgur.com/jrqLHrs.jpg',
     desc: "HomeBank helps you manage your cash by keeping a history of your previous transactions.",
     live_url: 'https://expo.io/@vijay_tiwari_vj/HomeBank',
     code_url: 'https://github.com/vijay-tiwari-vj/HomeBank',
@@ -31,7 +32,7 @@ const projects = [
   },
   {
     title: 'Number in words',
-    image: 'https://i.imgur.com/RBcMcBx.jpg',
+    image: 'https://i.imgur.com/yA3KB1y.jpg',
     desc: "Convert a number or a range of numbers to words.",
     live_url: 'https://vijay-tiwari-vj.github.io/number-in-words',
     code_url: 'https://github.com/vijay-tiwari-vj/number-in-words',
@@ -42,7 +43,7 @@ const projects = [
   },
   {
     title: 'Markdown Previewer',
-    image: 'https://i.imgur.com/UpfVX2G.jpg',
+    image: 'https://i.imgur.com/UC2aqlU.jpg',
     desc: "GitHub like markdown previewer.",
     live_url: 'https://vijay-tiwari-vj.github.io/markdown-previewer',
     code_url: 'https://github.com/vijay-tiwari-vj/markdown-previewer',
@@ -56,11 +57,12 @@ const projects = [
 export const App = () => {
   return (
     <div>
+      <NavBar />
       <section id="home" className="home-container">
         <Hero />
       </section>
       <section id="projects" className="projects-container">
-        <Container>
+        <Container fluid>
           <div className="max-container">
             <h2>Projects</h2>
             <div className="cards">
