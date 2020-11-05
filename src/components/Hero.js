@@ -1,40 +1,38 @@
 import React from 'react';
 import { gsap } from "gsap";
 import { MotionPathPlugin } from "gsap/MotionPathPlugin";
-import Navbar from 'react-bootstrap/Navbar';
-import Nav from 'react-bootstrap/Nav';
 import Container from 'react-bootstrap/Container';
 
-const getNavbar = () => (
-  <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-    <Container>
-      <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-      <Navbar.Collapse id="responsive-navbar-nav">
-        <Nav className="mr-auto">
-          <Nav.Link href="#home">Home</Nav.Link>
-          <Nav.Link href="#projects">Projects</Nav.Link>
-          <Nav.Link href="#contact">Contact</Nav.Link>
-        </Nav>
-      </Navbar.Collapse>
-    </Container>
-  </Navbar>
-)
-
-const motion = () => (
-  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" viewBox="140 60 340 340" width="100%" height="100%" id="svg"><path d="M456.43 223.42C456.43 305.2 389.22 371.59 306.43 371.59C223.64 371.59 156.43 305.2 156.43 223.42C156.43 141.64 223.64 75.25 306.43 75.25C389.22 75.25 456.43 141.64 456.43 223.42Z" id="path" fill="none" stroke="#ddd"></path>
-    <g id="circle">
-      <circle cx="0" cy="0" r="6" fill="#6773b8" />
-    </g>
-  </svg>
-);
-
 export const Hero = () => {
+  const circle = React.useRef(null);
+
+  gsap.registerPlugin(MotionPathPlugin);
+  gsap.config({
+    nullTargetWarn: false
+  });
+
+  gsap.to(circle.current, {
+    motionPath: {
+      path: "#path",
+      align: "#path",
+      alignOrigin: [0.5, 0.5],
+      start: -0.5,
+      end: 1.5
+    },
+    duration: 5,
+    ease: "linear",
+    repeat: -1
+  });
+
   return (
     <>
-      {getNavbar()}
       <Container className="home">
         <div className="animation">
-          {motion()}
+          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" viewBox="140 60 340 340" width="100%" height="100%" id="svg"><path d="M456.43 223.42C456.43 305.2 389.22 371.59 306.43 371.59C223.64 371.59 156.43 305.2 156.43 223.42C156.43 141.64 223.64 75.25 306.43 75.25C389.22 75.25 456.43 141.64 456.43 223.42Z" id="path" fill="none" stroke="#ddd"></path>
+            <g>
+              <circle ref={circle} cx="0" cy="0" r="6" fill="#6773b8" />
+            </g>
+          </svg>
           <div className="about-me">
             <h1>Hi, I'm Vijay<i className="far fa-hand-peace"></i></h1>
             <p>a developer</p>
@@ -43,7 +41,7 @@ export const Hero = () => {
         <div className="img-container">
           <img
             className="image"
-            src="https://i.imgur.com/0pZOI7a.png"
+            src="https://i.imgur.com/1b43faD.png"
             alt="Vijay"
           />
         </div>
@@ -51,20 +49,5 @@ export const Hero = () => {
     </>
   )
 }
-
-gsap.registerPlugin(MotionPathPlugin);
-
-gsap.to("#circle", {
-  motionPath: {
-    path: "#path",
-    align: "#path",
-    alignOrigin: [0.5, 0.5],
-    start: -0.5,
-    end: 1.5
-  },
-  duration: 5,
-  ease: "linear",
-  repeat: -1
-});
 
 export default Hero;
