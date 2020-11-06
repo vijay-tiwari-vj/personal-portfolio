@@ -64,7 +64,9 @@ export const App = () => {
       <section id="projects" className="projects-container">
         <Container fluid>
           <div className="max-container">
-            <h2>Projects</h2>
+            <span className="head">
+              <h2>Projects</h2>
+            </span>
             <div className="cards">
               <WorkCard projects={projects} />
             </div>
@@ -74,7 +76,9 @@ export const App = () => {
       <section id="contact" className="contact-container">
         <Container>
           <div className="max-container">
-            <h2>Let's work together...</h2>
+            <span className="head">
+              <h2>Let's work together...</h2>
+            </span>
             <Contact />
           </div>
         </Container>

@@ -5,7 +5,7 @@ import Container from 'react-bootstrap/Container';
 
 export const NavBar = () => {
   return (
-    <Navbar collapseOnSelect expand="lg" bg="light" sticky="top">
+    <Navbar collapseOnSelect expand="lg" sticky="top" bg="light" variant="light">
       <Container fluid="md">
         <Navbar.Brand href="#home">VJ</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
