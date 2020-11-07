@@ -3,7 +3,7 @@ import Container from 'react-bootstrap/Container';
 
 export const Footer = () => {
   return (
-    <Container>
+    <Container fluid>
       <footer
         style={{
           display: 'flex',
