@@ -1,13 +1,14 @@
 import React from 'react';
 import { gsap } from "gsap";
 import { MotionPathPlugin } from "gsap/MotionPathPlugin";
-import CSSPlugin from 'gsap/CSSPlugin';
+import { CSSPlugin } from 'gsap/CSSPlugin';
 import Container from 'react-bootstrap/Container';
 
 export const Hero = () => {
   const circle = React.useRef(null);
 
-  gsap.registerPlugin(MotionPathPlugin, CSSPlugin);
+  gsap.registerPlugin(CSSPlugin);
+  gsap.registerPlugin(MotionPathPlugin);
   gsap.config({
     nullTargetWarn: false
   });
