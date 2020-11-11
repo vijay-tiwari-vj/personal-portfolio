@@ -11,6 +11,7 @@ export const WorkCard = ({ projects }) => {
             <Card.Img
               variant="top"
               src={project.image}
+              alt={project.title}
               className="project-img"
             />
           </a>

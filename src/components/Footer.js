@@ -12,7 +12,7 @@ export const Footer = () => {
       >
         <div className="social-contacts">
           <div className="contacts">
-            <a href="https://github.com/vijay-tiwari-vj" target="_blank" rel="noreferrer">
+            <a href="https://github.com/vijay-tiwari-vj" target="_blank" rel="noreferrer" alt="GitHub link" className="contact">
               <i
                 className="fab fa-github"
                 aria-hidden="true"
@@ -23,7 +23,7 @@ export const Footer = () => {
               >
               </i>
             </a>
-            <a href="https://codepen.com/vijay_tiwari_vj" target="_blank" rel="noreferrer">
+            <a href="https://codepen.com/vijay_tiwari_vj" target="_blank" rel="noreferrer" alt="Codepen link" className="contact">
               <i
                 className="fab fa-codepen"
                 aria-hidden="true"
