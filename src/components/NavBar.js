@@ -8,7 +8,9 @@ export const NavBar = () => {
     <Navbar collapseOnSelect expand="lg" sticky="top" bg="light" variant="light">
       <Container fluid>
         <Navbar.Brand href="#home">VJ</Navbar.Brand>
-        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" style={{ border: 'none', color: '#333', padding: 0 }}>
+          <i className="fas fa-bars"></i>
+        </Navbar.Toggle>
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="mr-auto">
             <Nav.Link href="#home">Home</Nav.Link>
