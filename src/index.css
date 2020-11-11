@@ -45,6 +45,14 @@ form {
   width: 340px;
 }
 
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
 .about-me {
   position: absolute;
   display: flex;
@@ -190,12 +198,30 @@ form {
   padding-bottom: 1rem;
 }
 
+input:active,
+input:focus,
+textarea:active,
+textarea:focus {
+  outline: none !important;
+  -webkit-appearance:none;
+  box-shadow: none !important;
+  border: 1px solid #333 !important;
+}
+
 .btn-contact {
   font-size: large;
   margin: 0 auto;
   padding: 6px 18px;
   outline: none;
   border: none;
+}
+
+.contact {
+  transition: all 0.3s ease;
+}
+
+.contact:hover {
+  transform: translateY(-2px);
 }
 
 @media only screen and (max-width: 768px) {
