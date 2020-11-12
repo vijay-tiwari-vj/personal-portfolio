@@ -5,10 +5,11 @@ import Col from 'react-bootstrap/Col';
 export const Contact = () => {
   return (
     <>
-      <Form name="portfolio-contact" method="POST" data-netlify="true">
+      <Form name="portfolio-contact" method="post">
+        <input type="hidden" name="form-name" value="portfolio-contact" />
         <Form.Row className="form-fields">
           <Col>
-            <Form.Control name="name" aria-label="Name" placeholder="Enter your name" required />
+            <Form.Control name="name" aria-label="Name" type="text" placeholder="Enter your name" required />
           </Col>
           <Col>
             <Form.Control name="email" aria-label="Email" type="email" placeholder="Enter your email" required />
