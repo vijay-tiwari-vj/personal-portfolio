@@ -34,6 +34,17 @@ export const Footer = () => {
               >
               </i>
             </a>
+            <a href="https://www.linkedin.com/in/vijay-tiwari-vj/" target="_blank" rel="noreferrer" alt="Linkedin link" className="contact">
+              <i
+                className="fab fa-linkedin"
+                aria-hidden="true"
+                style={{
+                  color: 'black',
+                  fontSize: '48px'
+                }}
+              >
+              </i>
+            </a>
           </div>
           <div className="contacts">
             <i className="fa fa-phone-alt" aria-hidden="true"></i> +91-7873882485
